@@ -1,90 +1,25 @@
 <script></script>
 
 <template>
-    <div class="lg:rounded-2xl bg-[#111111] pt-12 md:py-12 px-6 sm:px-5 md:px-10 lg:px-14 pb-5">
-        <div class="heading">
-            <h1 class="text-white text-[20px] lg:text-[40px] font-bold leading-[60px] relative">About Me</h1>
-            <p class="text-[#A6A6A6] text-[15px] leading-7 pt-[30px] pb-12">11 Months of experience in all facets of web
-                development, from research and analysis,
-                design,
-                development, testing, and implementation of code and applications with long term support and
-                maintenance. Doesn’t only create working inter/intranet sites, but creates better ones and continually
-                strives to improve a site's usability, functionality, and navigation throughout its lifecycle. Ability to
-                translate business requirements into innovative software solutions.
-            </p>
+    <div class=" flex flex-col bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 flex">
+        <div class="bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 flex">
+            <div class="w-full">
+                <h1 class="text-black text-2xl lg:text-4xl font-semibold leading-10">First Row Content</h1>
         </div>
-        <div class="works">
-            <h3 class="text-[35px] text-white font-medium pb-5">What I do !</h3>
         </div>
-        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 ">
-            <div class="flex gap-4 border-2 border-[#212425] rounded-[0.75rem] p-[1.5rem] bg-transparent">
-                <div>
-                    <img src="../assets/icon-1.svg" width="40" height="40"
-                        class="!w-10 !h-10 object-contain block !max-w-[40px]">
-                </div>
-                <div class="des">
-                    <h3 class="text-white text-xl font-semibold mb-[5px]">Ui/Ux Design</h3>
-                    <p class=" leading-8 text-[#A6A6A6]">Create visually stunning and user-friendly interfaces that enhance
-                        user experience. I design solutions focus on modern aesthetics and functionality.</p>
-                </div>
-            </div>
-            <div class="flex gap-4 border-2 border-[#212425] rounded-[0.75rem] p-[1.5rem] bg-transparent">
-                <div>
-                    <img src="../assets/icon-2.svg" width="40" height="40"
-                        class="!w-10 !h-10 object-contain block !max-w-[40px]">
-                </div>
-                <div class="des">
-                    <h3 class="text-white text-xl font-semibold mb-[5px]">App Development</h3>
-                    <p class="leading-8 text-[#A6A6A6]">Craft cutting-edge mobile applications with expert app
-                        development services. I transform ideas into functional and innovative applications tailored to
-                        your needs.</p>
-                </div>
-            </div>
-            <div class="flex gap-4 border-2 border-[#212425] rounded-[0.75rem] p-[1.5rem] bg-transparent">
-                <div>
-                    <img src="../assets/icon-5.svg" width="40" height="40"
-                        class="!w-10 !h-10 object-contain block !max-w-[40px]">
-                </div>
-                <div class="des">
-                    <h3 class="text-white text-xl font-semibold mb-[5px]">Managment</h3>
-                    <p class="leading-8 text-[#A6A6A6]">Efficiently organize and oversee your projects with management
-                        solutions. I provide tools and strategies to streamline processes and ensure successful project
-                        delivery.</p>
-                </div>
-            </div>
-            <div class="flex gap-4 border-2 border-[#212425] rounded-[0.75rem] p-[1.5rem] bg-transparent">
-                <div>
-                    <img src="../assets/icon-6.svg" width="40" height="40"
-                        class="!w-10 !h-10 object-contain block !max-w-[40px]">
-                </div>
-                <div class="des">
-                    <h3 class="text-white text-xl font-semibold mb-[5px]">Web Development</h3>
-                    <p class="leading-8 text-[#A6A6A6]">Build powerful and responsive websites with web development
-                        expertise. I focus on creating scalable and feature-rich web solutions tailored to meet your
-                        business objectives.</p>
-                </div>
-            </div>
+      
+        <div class=" flex-1.2 bg-gray-100 border-b border-gray-200 heading">
+          <h1 class=" text-black text-2xl lg:text-4xl font-semibold leading-10">Introduction</h1>
+          <p class="text-gray-600 text-sm leading-7 pt-6 pb-12">I'm a Full Stack Application Developer with extensive experience in JavaScript/TypeScript application development. Over the years, I've had the opportunity to work with professional teams globally and have developed large-scale applications such as Management Systems, Point of Sales, E-commerce applications, and more. My passion lies in crafting efficient, reliable, and user-friendly applications that cater to the needs of businesses and end-users alike. I'm always on the lookout for new and exciting projects to work on, so feel free to connect with me to discuss any potential opportunities.</p>
         </div>
-        <div class="py-[10px] text-sm mt-8 rounded-[0.75rem] bg-[#212425]">
-            <p class="text-white text-center flex items-center justify-center gap-4">This Portfolio created on
-                <a href="https://vuejs.org/" target="_blank"><svg class="logo" viewBox="0 0 128 128" width="24" height="24"
-                        data-v-e9cb7cd5="">
-                        <path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z"
-                            data-v-e9cb7cd5=""></path>
-                        <path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-e9cb7cd5="">
-                        </path>
-                    </svg></a> &
-                <a href="https://tailwindcss.com/" target="_blank"><svg viewBox="0 0 248 31"
-                        class="text-slate-900 dark:text-white w-auto h-5">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z"
-                            fill="#38bdf8"></path>
-                    </svg>
-                </a>
-            </p>
+        <div class="flex-1 bg-white border-b border-gray-200 flex flex-col items-center">
+          <img src="./assets/profile.png"
+            class="h-[140px] w-[140px]  rounded-[120px] top-0 object-cover ">
         </div>
+      
+     
     </div>
-</template>
+  </template>
 
 <style scoped>
 .heading h1:after {

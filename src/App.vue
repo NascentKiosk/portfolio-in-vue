@@ -1,4 +1,5 @@
 <script setup>
+//src="https://cdn.tailwindcss.com";
 import { ref, onMounted, onBeforeUnmount, watch, computed } from 'vue';
 import { useRoute } from 'vue-router';
 
@@ -39,7 +40,283 @@ const showTopContainer = computed(() => {
 </script>
 
 <template>
-  <div class="lg:mx-[40px]">
+
+  <div class="grid grid-cols-4 ">
+    <!-- First Row -->
+    <div class="bg-[#151B54] border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 ">
+      <div class="w-full">
+        <div :class="[mobileClass]" v-if="showTopContainer"
+        class="px-6 sm:px-5 md:px-10 lg:px-14 pb-5  ">
+        <div class="flex flex-col items-center">
+          <img src="./assets/profile.png"
+            class="h-[140px] w-[140px]  rounded-[120px] top-0 object-cover ">
+          <h2 class="mt-6 mb-2 text-3xl font-semi-bold text-white">Timothy Juma</h2>
+          <p class="text-white text-l font-light mb-[5px] uppercase">Norrköping, Sweden</p>
+        
+          <span class="mb-4 text-[#A6A6A6] inline-block px-5 py-1.5 rounded-lg  ">Javascript Full-Stack Developer</span>
+        </div>
+        <div class="flex socail_icon justify-center">
+          <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#212425] ml-[15px]"><a
+              href="https://www.instagram.com/lunatic_naresh1?igsh=cGVwZmIxdjU5bjJv" target="_blank"
+              class="text-[#1773EA]"><i class="fa-brands fa-instagram"></i></a></button>
+          <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#212425] ml-[15px]"><a
+              href="https://x.com/Lunatic_Naresh?t=fCjBUwjalqrTpLxgy2BTYA&s=09" target="_blank" class="text-[#1C9CEA]"><i
+                class="fa-brands fa-twitter"></i></a></button>
+          <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#212425] ml-[15px]"> <a
+              href="https://github.com/naresh515?fbclid=PAAaZUwv63b3s-1QU2oKR5eoYGZJzcNUHih6vupC6vAN5lON1OK3Lb_eG75p8"
+              target="_blank" class="text-[#e14a84]"><i class="fa-brands fa-github"></i></a></button>
+          <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#212425] ml-[15px]"><a
+              href="https://www.linkedin.com/in/naresh-tak-90b9a9209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank" class="text-[#0072b1]"><i class="fa-brands fa-linkedin"></i></a></button>
+        </div>
+        <div class="contact_info  p-2 lg:p-7 rounded-2xl my-7">
+          <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
+                class="fa-solid fa-mobile-screen-button text-[#E93B81]"></i></button>
+            <div class="flex flex-col items-baseline">
+              <span class="text-xs text-white">Phone</span>
+              <span><a href="tel:8279214452" class="text-white hover:text-[#FA5252]">0729496871</a></span>
+            </div>
+          </div>
+          <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
+                class="fa-solid fa-location-dot text-[#6AB5B8]"></i></button>
+            <div class="flex flex-col items-baseline">
+              <span class="text-xs text-white"><p>Available for hire:
+                
+              </p></span>
+              <span><a class="text-white">Norrkoping, Sweden</a></span>
+            </div>
+          </div>
+          <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
+                class="fa-solid fa-envelope text-[#FD7590]"></i></button>
+            <div class="flex flex-col items-baseline">
+              <span class="text-xs text-white">Email</span>
+              <span><a href="mailto:taknaresh515@gmail.com"
+                  class="text-white hover:text-[#FA5252]">mmbasujuma@gmail.com</a></span>
+            </div>
+          </div>
+          <div class="flex py-2.5 gap-2 lg:gap-3.5">
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
+                class="fa-solid fa-calendar-days text-[#C17CEB]"></i></button>
+            <div class="flex flex-col items-baseline">
+              <span class="text-xs text-white">Birthday</span>
+              <span><a class="text-white">October 18, 1989</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       
+      </div>
+    </div>
+
+    <!-- Second Row (2x wider) -->
+    <div class="bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 col-span-2">
+        <div class=" w-full ">
+          <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Introduction</h1>
+        <p class="text-gray-600 text-sm leading-7 pt-6 pb-12 ">I'm a Full Stack Application Developer with extensive experience in JavaScript/TypeScript application development. Over the years, I've had the opportunity to work with professional teams globally and have developed large-scale applications such as Management Systems, Point of Sales, E-commerce applications, and more. My passion lies in crafting efficient, reliable, and user-friendly applications that cater to the needs of businesses and end-users alike. I'm always on the lookout for new and exciting projects to work on, so feel free to connect with me to discuss any potential opportunities.
+          
+        </p>
+        <div class="w-full border-t border-gray-300"></div>
+        <span
+        class="bg-secondary m-2 inline-block rounded border border-transparent py-1 px-2.5 text-xs font-medium text-white">
+        Secondary
+    </span>
+      </div>
+      
+
+      
+      
+    </div>
+
+    <!-- Third Row -->
+    <div class=" bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14">
+      <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Tools / Frameworks</h1>
+      <div class="flex justify-between grid grid-cols-2 gap-2 m-5 mb-10">
+            <!-- START Card component -->
+            <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="./img/logos/react-js-icon.svg" alt="ReactJS Logo" class="h-[50px] w-[50px] rounded-50px">
+                <h5>React.js</h5>
+                <p>5 Year exp</p>
+            </article>
+
+            </div>
+          
+            <!-- END Card component -->
+
+            <article class="container bg-white shadow-2xl rounded-2xl p-5">
+              <img src="./img/logos/react-js-icon.svg "
+              class=" square-content h-[50px] w-[50px]  rounded-50px]"  flex justify-center items-center >
+                <h5 class="square-content">React.js</h5>
+                <p class="square-content">5 Year exp</p>
+               
+            </article>
+
+            <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="./img/logos/react-js-icon.svg" alt="ReactJS Logo" class="h-[50px] w-[50px] rounded-50px">
+                <h5>React.js</h5>
+                <p>5 Year exp</p>
+            </article>
+
+            </div>
+            <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="./img/logos/react-js-icon.svg" alt="ReactJS Logo" class="h-[50px] w-[50px] rounded-50px">
+                <h5>React.js</h5>
+                <p>5 Year exp</p>
+            </article>
+
+            </div><div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="./img/logos/react-js-icon.svg" alt="ReactJS Logo" class="h-[50px] w-[50px] rounded-50px">
+                <h5>React.js</h5>
+                <p>5 Year exp</p>
+            </article>
+
+            </div><div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="./img/logos/react-js-icon.svg" alt="ReactJS Logo" class="h-[50px] w-[50px] rounded-50px">
+                <h5>React.js</h5>
+                <p>5 Year exp</p>
+            </article>
+
+            </div><div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="./img/logos/react-js-icon.svg" alt="ReactJS Logo" class="h-[50px] w-[50px] rounded-50px">
+                <h5>React.js</h5>
+                <p>5 Year exp</p>
+            </article>
+
+            </div><div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="./img/logos/react-js-icon.svg" alt="ReactJS Logo" class="h-[50px] w-[50px] rounded-50px">
+                <h5>React.js</h5>
+                <p>5 Year exp</p>
+            </article>
+
+            </div>
+        </div>
+        
+        </div>
+
+       
+           
+        
+    
+   
+
+  
+              
+    
+          
+        
+    
+      
+  </div>
+
+  
+
+
+
+
+
+
+
+ <div class="flex flex-row ">
+    <!-- First Row -->
+    <div class="bg-[#151B54] border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 ">
+      <div class="w-full">
+        <div :class="[mobileClass]" v-if="showTopContainer"
+        class="pt-12 md:py-12 px-6 sm:px-5 md:px-10 lg:px-14 pb-5 ">
+        <div class="flex flex-col items-center">
+          <img src="./assets/profile.png"
+            class="h-[140px] w-[140px]  rounded-[120px] top-0 object-cover ">
+          <h2 class="mt-6 mb-2 text-3xl font-semi-bold text-white">Timothy Juma</h2>
+          <p class="text-white text-l font-light mb-[5px] uppercase">Norrköping, Sweden</p>
+        
+          <span class="mb-4 text-[#A6A6A6] inline-block px-5 py-1.5 rounded-lg bg-[#1D1D1D] ">Javascript Full-Stack Developer</span>
+        </div>
+        <div class="flex socail_icon justify-center">
+          <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#212425] ml-[15px]"><a
+              href="https://www.instagram.com/lunatic_naresh1?igsh=cGVwZmIxdjU5bjJv" target="_blank"
+              class="text-[#1773EA]"><i class="fa-brands fa-instagram"></i></a></button>
+          <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#212425] ml-[15px]"><a
+              href="https://x.com/Lunatic_Naresh?t=fCjBUwjalqrTpLxgy2BTYA&s=09" target="_blank" class="text-[#1C9CEA]"><i
+                class="fa-brands fa-twitter"></i></a></button>
+          <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#212425] ml-[15px]"> <a
+              href="https://github.com/naresh515?fbclid=PAAaZUwv63b3s-1QU2oKR5eoYGZJzcNUHih6vupC6vAN5lON1OK3Lb_eG75p8"
+              target="_blank" class="text-[#e14a84]"><i class="fa-brands fa-github"></i></a></button>
+          <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#212425] ml-[15px]"><a
+              href="https://www.linkedin.com/in/naresh-tak-90b9a9209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank" class="text-[#0072b1]"><i class="fa-brands fa-linkedin"></i></a></button>
+        </div>
+        <div class="contact_info bg-[#1D1D1D] p-2 lg:p-7 rounded-2xl my-7">
+          <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
+                class="fa-solid fa-mobile-screen-button text-[#E93B81]"></i></button>
+            <div class="flex flex-col items-baseline">
+              <span class="text-xs text-white">Phone</span>
+              <span><a href="tel:8279214452" class="text-white hover:text-[#FA5252]">0729496871</a></span>
+            </div>
+          </div>
+          <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
+                class="fa-solid fa-location-dot text-[#6AB5B8]"></i></button>
+            <div class="flex flex-col items-baseline">
+              <span class="text-xs text-white">Location</span>
+              <span><a class="text-white">Norrkoping, Sweden</a></span>
+            </div>
+          </div>
+          <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
+                class="fa-solid fa-envelope text-[#FD7590]"></i></button>
+            <div class="flex flex-col items-baseline">
+              <span class="text-xs text-white">Email</span>
+              <span><a href="mailto:taknaresh515@gmail.com"
+                  class="text-white hover:text-[#FA5252]">mmbasujuma@gmail.com</a></span>
+            </div>
+          </div>
+          <div class="flex py-2.5 gap-2 lg:gap-3.5">
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
+                class="fa-solid fa-calendar-days text-[#C17CEB]"></i></button>
+            <div class="flex flex-col items-baseline">
+              <span class="text-xs text-white">Birthday</span>
+              <span><a class="text-white">October 18, 1989</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       
+      </div>
+    </div>
+
+    <!-- Second Row (Middle Row) -->
+    <div class=" bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14  ">
+      <div class=" w-full ">
+        <h1 class=" text-black text-2xl lg:text-4xl font-semi-bold leading-10">Introduction</h1>
+        <p class="text-gray-600 text-sm leading-7 pt-6 pb-12 ">I'm a Full Stack Application Developer with extensive experience in JavaScript/TypeScript application development. Over the years, I've had the opportunity to work with professional teams globally and have developed large-scale applications such as Management Systems, Point of Sales, E-commerce applications, and more. My passion lies in crafting efficient, reliable, and user-friendly applications that cater to the needs of businesses and end-users alike. I'm always on the lookout for new and exciting projects to work on, so feel free to connect with me to discuss any potential opportunities.
+          
+        </p>
+      </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 ">
+      <div class="w-full">
+        <h1 class=" w-1/3 text-black text-2xl lg:text-4xl font-semi-bold leading-10">Tools / Frafvfgffffffffffffffffffffffffffffmeworks</h1>
+        
+          
+      </div>
+    </div>
+  </div>
+
+
+  <div class="lg:mx-[10px] ">
     <nav class="bg-black m-0 p-4 flex justify-end lg:hidden">
       <div class="lg:hidden w-[30px] h-[30px] block" @click="toggleMobileMenu">
         <div class="hamburger-icon bg-[#EF4060] w-[40px] h-[40px] rounded-full flex flex-col items-center justify-center"
@@ -84,14 +361,17 @@ const showTopContainer = computed(() => {
         </RouterLink>
       </div>
     </div>
-    <div class="sub_container flex flex-col lg:grid grid-cols-[400px,1fr] lg:my-[50px] gap-4 lg:gap-14">
+    <div class="sub_container flex flex-col lg:grid grid-cols-[400px,1fr] lg:my-[10px] gap-4 lg:gap-14">
+      
       <div :class="[mobileClass]" v-if="showTopContainer"
-        class="top_container relative lg:mt-[190px] mt-[230px] w-full mx-auto text-center bg-[#111111] p-6 lg:rounded-[20px] h-[500px] lg:h-[550px]">
+        class="bg-[#111111] pt-12 md:py-12 px-6 sm:px-5 md:px-10 lg:px-14 pb-5 lg:mt-[180px]">
         <div class="flex flex-col items-center">
-          <img src="./assets/1707458134767.jpg"
-            class="h-[240px] w-[240px] absolute rounded-[20px] top-0 object-cover mt-[-200px]">
-          <h2 class="mt-6 mb-2 text-3xl font-semibold text-white">Naresh Tak</h2>
-          <span class="mb-4 text-[#A6A6A6] inline-block px-5 py-1.5 rounded-lg bg-[#1D1D1D] ">Ui/Ux Designer</span>
+          <img src="./assets/profile.png"
+            class="h-[140px] w-[140px]  rounded-[120px] top-0 object-cover ">
+          <h2 class="mt-6 mb-2 text-3xl font-semi-bold text-white">Timothy Juma</h2>
+          <p class="text-white text-l font-light mb-[5px] uppercase">Norrköping, Sweden</p>
+        
+          <span class="mb-4 text-[#A6A6A6] inline-block px-5 py-1.5 rounded-lg bg-[#1D1D1D] ">Javascript Full-Stack Developer</span>
         </div>
         <div class="flex socail_icon justify-center">
           <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#212425] ml-[15px]"><a
@@ -113,7 +393,7 @@ const showTopContainer = computed(() => {
                 class="fa-solid fa-mobile-screen-button text-[#E93B81]"></i></button>
             <div class="flex flex-col items-baseline">
               <span class="text-xs text-white">Phone</span>
-              <span><a href="tel:8279214452" class="text-white hover:text-[#FA5252]">8279214452</a></span>
+              <span><a href="tel:8279214452" class="text-white hover:text-[#FA5252]">0729496871</a></span>
             </div>
           </div>
           <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
@@ -121,7 +401,7 @@ const showTopContainer = computed(() => {
                 class="fa-solid fa-location-dot text-[#6AB5B8]"></i></button>
             <div class="flex flex-col items-baseline">
               <span class="text-xs text-white">Location</span>
-              <span><a class="text-white">Bikaner, Rajasthan, India</a></span>
+              <span><a class="text-white">Norrkoping, Sweden</a></span>
             </div>
           </div>
           <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
@@ -130,7 +410,7 @@ const showTopContainer = computed(() => {
             <div class="flex flex-col items-baseline">
               <span class="text-xs text-white">Email</span>
               <span><a href="mailto:taknaresh515@gmail.com"
-                  class="text-white hover:text-[#FA5252]">taknaresh515@gmail.com</a></span>
+                  class="text-white hover:text-[#FA5252]">mmbasujuma@gmail.com</a></span>
             </div>
           </div>
           <div class="flex py-2.5 gap-2 lg:gap-3.5">
@@ -138,7 +418,7 @@ const showTopContainer = computed(() => {
                 class="fa-solid fa-calendar-days text-[#C17CEB]"></i></button>
             <div class="flex flex-col items-baseline">
               <span class="text-xs text-white">Birthday</span>
-              <span><a class="text-white">April 15, 1997</a></span>
+              <span><a class="text-white">October 18, 1989</a></span>
             </div>
           </div>
         </div>
@@ -212,4 +492,111 @@ body {
 .active .line3 {
   transform: translateY(-8px) rotate(-45deg);
 }
+
+
+.heading h1:after {
+    content: "";
+    left: 13rem;
+    width: 12rem;
+    position: absolute;
+    top: 50%;
+    height: 0.125rem;
+    transform: translateY(-50%);
+    border-radius: 0.375rem;
+    background-image: linear-gradient(to right, var(--color1, #fa5252), var(--color2, #dd2476));
+}
+
+@media screen and (max-width: 800px) {
+    .heading h1:after {
+        left: 7rem;
+        width: 10rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.square-container .profile-square h5 {
+    font-size: .875rem;
+    margin-bottom: 1px;
+    word-break: break-word
+}
+
+.square-container .profile-square p {
+    font-size: .875rem;
+    font-weight: 200;
+    margin-bottom: 0
+}
+
+.square-container .profile-square-new {
+    border: 1px dashed #b0b0b0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none
+}
+
+.square-container .profile-square-new .square-content {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+@media(max-width: 1280px) {
+    .profile-square-new {
+        margin:2.5rem 0;
+        text-align: center;
+        width: 100%
+    }
+
+    .square-container {
+        grid-gap: 5px;
+        display: grid;
+        grid-auto-columns: calc(90% - 10px);
+        grid-auto-flow: column;
+        grid-template-columns: 10px;
+        grid-template-rows: minmax(110px,1fr);
+        margin-bottom: 0;
+        margin-left: -20px;
+        overflow-x: scroll;
+        padding-bottom: 0;
+        -ms-scroll-snap-type: x proximity;
+        scroll-snap-type: x proximity;
+        scrollbar-width: none;
+        width: 135%
+    }
+
+    .square-container:after,.square-container:before {
+        content: "";
+        width: 10px
+    }
+}
+
+@media(max-width: 992px) {
+    .square-container {
+        grid-auto-columns:calc(46% - 10px);
+        width: 113%
+    }
+
+    .square-container .profile-square h5 {
+        font-size: 2.8vw
+    }
+
+    .square-container::-webkit-scrollbar {
+        display: none
+    }
+}
+
 </style>
