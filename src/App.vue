@@ -2,6 +2,15 @@
 //src="https://cdn.tailwindcss.com";
 import { ref, onMounted, onBeforeUnmount, watch, computed } from 'vue';
 import { useRoute } from 'vue-router';
+import Article from './components/article.vue';
+
+// Initialization for ES Users
+import {
+  Collapse,
+  initTE,
+} from "tw-elements";
+
+initTE({ Collapse });
 
 
 
@@ -42,13 +51,24 @@ const showTopContainer = computed(() => {
 });
 
 
+const MyComponent = {
+  data() {
+    return {
+      showMore: false
+    };
+  },
+  methods: {
+    toggleMore() {
+      this.showMore = !this.showMore;
+    }
+  }
+};
 
 </script>
 
 <template>
 
-<!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
-<!-- Main navigation container -->
+
 <nav
   class="relative flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4"
   data-te-navbar-ref>
@@ -103,24 +123,25 @@ const showTopContainer = computed(() => {
       </ul>
 
       <div class="flex items-center">
-       
-       
         <button
           type="button"
           data-te-ripple-init
           data-te-ripple-color="light"
-          class="mr-3 inline-block rounded px-3 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg motion-reduce:transition-none"
-          style="background-color: #333">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24">
-            <path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-          </svg>
+          class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 motion-reduce:transition-none">
+          Projects
         </button>
-        
+        <div class="flex items-center">
+        <button
+          type="button"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+          class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 motion-reduce:transition-none">
+          Work Expirience
+        </button>
+      </div>
+       
+       
+       
     <div class="relative ml-4" data-te-dropdown-ref>
       <a
         class="mr-4 flex items-center text-gray-500 transition duration-200 hover:text-gray-700 hover:ease-in-out focus:text-gray-700 motion-reduce:transition-none"
@@ -205,8 +226,8 @@ const showTopContainer = computed(() => {
         <div :class="[mobileClass]" v-if="showTopContainer"
         class="px-6 sm:px-5 md:px-10 lg:px-14 pb-5  ">
         <div class="flex flex-col items-center">
-          <img src="./assets/profile.png"
-            class="h-[140px] w-[140px]  rounded-[120px] top-0 object-cover ">
+          <img src="./assets/profile.png "
+            class="h-[80px] w-[80px]  rounded-[120px]  ">
           <h2 class="mt-6 mb-2 text-3xl font-semi-bold text-white">Timothy Juma</h2>
           <p class="text-white text-l font-light mb-[5px] uppercase">Norrköping, Sweden</p>
         
@@ -276,6 +297,8 @@ const showTopContainer = computed(() => {
         <p class="text-gray-600 text-sm leading-7 pt-6 pb-12 ">I'm a Full Stack Application Developer with extensive experience in JavaScript/TypeScript application development. Over the years, I've had the opportunity to work with professional teams globally and have developed large-scale applications such as Management Systems, Point of Sales, E-commerce applications, and more. My passion lies in crafting efficient, reliable, and user-friendly applications that cater to the needs of businesses and end-users alike. I'm always on the lookout for new and exciting projects to work on, so feel free to connect with me to discuss any potential opportunities.
           
         </p>
+
+        
         <div class="w-full border-t border-gray-300"></div>
         
        
@@ -285,90 +308,26 @@ const showTopContainer = computed(() => {
 
       <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Skills </h1>  <br />
       
-      <div class="flex justify-between grid grid-cols-7 mb-10">
-    
-            <!-- START Card component -->
-            <div  class="flex justify-center items-center ">
-              <article class=" rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
-                <h7 class=" text-xs font-bold text-center" >Version Control</h7>
-                <ul>
-                  <li class="text-xs">Git</li>
-                </ul>
-              
-            </article>
-          </div>
-            <!-- START Card component -->
-            <div class="flex justify-center items-center">
-            <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
-              <h7 class="text-xs font-bold text-center">Languages</h7>
-                <ul class="text-xs ">
-                  <li>JavaScript</li>
-                  <li>TypeScript</li>
-                  <li>CSS3</li>
-                  <li>SASS</li>
-                </ul>
-            </article>
-          </div>
-              <!-- START Card component -->
-              <div class="flex justify-center items-center">
-            <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
-              <h7 class="text-xs font-bold text-center">Frameworks</h7>
-                <ul class="text-xs ">
-                  <li>React</li>
-                  <li>Node.js </li>
-                  <li>Angular</li>
-                  <li>Vue.js</li>
-                </ul>
-            </article>
-          </div>
-          <!-- START Card component -->
-          <div class="flex justify-center items-center">
-            <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
-              <h7 class="text-xs font-bold text-center">Scripting</h7>
-                <ul class="text-xs ">
-                  <li>Python</li>
-                  <li>Bash</li>
-                  <li>Powershell</li>
-                </ul>
-            </article>
-          </div>
-          <!-- START Card component -->
-          <div class="flex justify-center items-center">
-            <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
-              <h7 class="text-xs font-bold text-center">Operaring/S</h7>
-                <ul class="text-xs ">
-                  <li>Linux</li>
-                  <li>Windows</li>
-                </ul>
-            </article>
-          </div>
 
-          <!-- START Card component -->
-          <div class="flex justify-center items-center">
-            <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
-              <h7 class="text-xs font-bold text-center">Containerization</h7>
-                <ul class="text-xs ">
-                  <li>Docker</li>
-                  <li>Kubernetes</li>
-                  
-                </ul>
-            </article>
-          </div>
-          <!-- START Card component -->
-          <div class="flex justify-center items-center">
-            <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
-              <h7 class="text-xs font-bold text-center">CI/CD</h7>
-                <ul class="text-xs ">
-                  <li>GitLab CI</li>
-                  <li>GitHub Actions</li>
-                  
-                </ul>
-            </article>
-          </div>
-    
+        <div class="text-sm text-slate-600 p-4 leading-6 flex flex-row flex-wrap gap-2">
+        <span class="pill">JavaScript Frameworks</span>
+        <span class="pill">Front End Frameworks</span>
+        <span class="pill">CSS Preprocessors</span>
+        <span class="pill">RESTful Services/APIs</span>
+        <span class="pill">Git/Version Control</span>
+        <span class="pill">Content Management Systems</span>
+        <span class="pill">Cross-Browser Development</span>
+        <span class="pill">Testing/Debugging</span>
+        <span class="pill">Problem-Solving</span>
+       
+        
+  
       </div>
+
+
       <br />
       <div class="w-full border-t border-gray-300"></div>
+     
       <br />
       <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Recent projects</h1>  <br />
 
@@ -411,59 +370,14 @@ const showTopContainer = computed(() => {
       <br />
       <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Recent Roles</h1>  <br />
       
-      <div class="flex justify-center items-center flex-col">
-        <img class="image-center" src="./img/logos/smhi-logo-120.png" alt="Dental 99"> 
-        <p  class="project-role text-center">SMHI</p> 
-        <p  class="project-role text-center">Application Technician </p> 
-        <p  class="project-stack text-center text-xs">Sep 2023 to present</p>
-        <br />
-        <p>Develop responsive web applications using React.js, leveraging state management with Redux and context API.  Implement RESTful...
-          <span class="hidden" id="more-text">
-            APIs for seamless integration of frontend and backend systems. Collaborate with designers and backend developers to ensure optimal user experience and functionality. Collaborate with development teams to integrate automated testing into CI/CD pipelines, ensuring code quality and minimizing bugs in production.
-          </span>
-        </p>
-        <button id="toggle-btn" class=" text-blue-500 focus:outline-none">Read More</button>
-        <button id="hide-btn" class="hidden mt-4 text-blue-500 focus:outline-none">Hide</button>
-        
-        <br />
+      
 
+
+      <div id="app">
+        <Article />
       </div>
 
-      <div class="flex justify-center items-center flex-col">
-        <img class="image-center" src="./img/logos/react-cert-africa-logo.png" alt="Dental 99"> 
-        <p  class="project-role text-center">React Cert Africa </p> 
-        <p  class="project-role text-center">Full stack Developer</p> 
-        <p  class="project-stack text-center text-xs">2020 - 2022</p>
-        <br />
-        <p>Designed, developed, and deployed a CRM Application using modern frontend technologies such as React.js, Redux, Node.js and RESTful...
-          <span class="hidden" id="more-text">
-            APIs. Implemented features such as user authentication, client management, and task tracking to streamline business processes. Utilized RESTful APIs to communicate with backend services and databases, ensuring data integrity and security. Collaborated with designers to translate wireframes into responsive web interfaces.
-          </span>
-        </p>
-        <button id="toggle-btn" class=" text-blue-500 focus:outline-none">Read More</button>
-        <button id="hide-btn" class="hidden mt-4 text-blue-500 focus:outline-none">Hide</button>
-        
-        <br />
 
-      </div>
-
-      <div class="flex justify-center items-center flex-col">
-        <img class="image-center" src="./img/logos/ruwaza-logo.png" alt="Dental 99"> 
-        <p  class="project-role text-center">Ruwaza </p> 
-        <p  class="project-role text-center">Full stack Developer</p> 
-        <p  class="project-stack text-center text-xs">2018- 2020</p>
-        <br />
-        <p>ssisted in the development of user interfaces for client projects using HTML, CSS, and JavaScript. Worked closely with lead developer....
-          <span class="hidden" id="more-text">
-            to design products and solutions to different user and infrastructure problems. Conducted code reviews and implemented best practices to improve code quality. Configuring and deploying new releases of Applications. 
-          </span>
-        </p>
-        <button id="toggle-btn" class=" text-blue-500 focus:outline-none">Read More</button>
-        <button id="hide-btn" class="hidden mt-4 text-blue-500 focus:outline-none">Hide</button>
-        
-        <br />
-
-      </div>
 
       
 
@@ -676,7 +590,15 @@ body {
 
 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer components {
+    .pill {
+        @apply  px-1 py-0.5 bg-gray-100 rounded-md text-gray-700 text-xs border border-gray-300 ;
+    }
+}
 
 
 

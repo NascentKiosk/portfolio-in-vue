@@ -1,3 +1,91 @@
+<div class="flex justify-between grid grid-cols-7 mb-10">
+    
+    <!-- START Card component -->
+    <div  class="flex justify-center items-center ">
+      <article class=" rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
+        <h7 class=" text-xs font-bold text-center" >Version Control</h7>
+        <ul>
+          <li class="text-xs">Git</li>
+        </ul>
+      
+    </article>
+  </div>
+    <!-- START Card component -->
+    <div class="flex justify-center items-center">
+    <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
+      <h7 class="text-xs font-bold text-center">Languages</h7>
+        <ul class="text-xs ">
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>CSS3</li>
+          <li>SASS</li>
+        </ul>
+    </article>
+  </div>
+      <!-- START Card component -->
+      <div class="flex justify-center items-center">
+    <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
+      <h7 class="text-xs font-bold text-center">Frameworks</h7>
+        <ul class="text-xs ">
+          <li>React</li>
+          <li>Node.js </li>
+          <li>Angular</li>
+          <li>Vue.js</li>
+        </ul>
+    </article>
+  </div>
+  <!-- START Card component -->
+  <div class="flex justify-center items-center">
+    <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
+      <h7 class="text-xs font-bold text-center">Scripting</h7>
+        <ul class="text-xs ">
+          <li>Python</li>
+          <li>Bash</li>
+          <li>Powershell</li>
+        </ul>
+    </article>
+  </div>
+  <!-- START Card component -->
+  <div class="flex justify-center items-center">
+    <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
+      <h7 class="text-xs font-bold text-center">Operaring/S</h7>
+        <ul class="text-xs ">
+          <li>Linux</li>
+          <li>Windows</li>
+        </ul>
+    </article>
+  </div>
+
+  <!-- START Card component -->
+  <div class="flex justify-center items-center">
+    <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
+      <h7 class="text-xs font-bold text-center">Containerization</h7>
+        <ul class="text-xs ">
+          <li>Docker</li>
+          <li>Kubernetes</li>
+          
+        </ul>
+    </article>
+  </div>
+  <!-- START Card component -->
+  <div class="flex justify-center items-center">
+    <article class="rounded-md bg-gray-50 px-2 py-1 text-s font-semi-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
+      <h7 class="text-xs font-bold text-center">CI/CD</h7>
+        <ul class="text-xs ">
+          <li>GitLab CI</li>
+          <li>GitHub Actions</li>
+          
+        </ul>
+    </article>
+  </div>
+
+</div>
+<br />
+<div class="w-full border-t border-gray-300"></div>
+
+
+
+
 <div class="flex flex-row ">
     <!-- First Row -->
     <div class="bg-[#151B54] border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 ">
