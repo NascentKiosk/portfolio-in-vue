@@ -232,32 +232,39 @@ const MyComponent = {
             class="h-[80px] w-[80px]  rounded-[120px]  ">
           <h2 class="mt-6 mb-2 text-2xl font-semi-bold text-white">Timothy Juma</h2>
           <p class="text-white font-light uppercase">Norrköping, Sweden</p>
-          <span class="mb-4 text-[#ffff] text-sm font-semi-bold inline-block px-5 py-1.5 rounded-lg whitespace-nowrap">Javascript Full Stack Developer</span>
-        </div>
+          <span class="text-[#ffff] text-sm font-semi-bold  px-5 py-1.5 rounded-lg whitespace-nowrap">Javascript Full Stack Developer</span>
 
           <!-- Social-Links -->
-        <div class="flex socail_icon justify-center whitespace-nowrap ">
-          <button class="w-[2.5rem] h-[2.5rem] rounded-lg "> <a
-              href="https://github.com/NascentKiosk"
-              target="_blank" class="text-[#ffffff]"><i class="fa-brands fa-github"></i></a></button>
-          <button class="w-[2.5rem] h-[2.5rem] rounded-lg  ml-[15px]"><a
-              href="https://www.linkedin.com/in/timothy-juma-44902b48/"
-              target="_blank" class="text-[#0072b1]"><i class="fa-brands fa-linkedin"></i></a></button>
+          <div class="flex socail_icon justify-center whitespace-nowrap ">
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg "> <a
+                href="https://github.com/NascentKiosk"
+                target="_blank" class="text-[#ffffff]"><i class="fa-brands fa-github"></i></a></button>
+            <button class="w-[2.5rem] h-[2.5rem] rounded-lg  ml-[15px]"><a
+                href="https://www.linkedin.com/in/timothy-juma-44902b48/"
+                target="_blank" class="text-[#0072b1]"><i class="fa-brands fa-linkedin"></i></a></button>
+          </div>
+          <br />
+      <div class="w-full border-t border-gray-300"></div>
+      <br />
+          <!-- Availability -->
+       
+
         </div>
+
+        
         <div class="contact_info  p-2 lg:p-7 rounded-2xl my-7">
           <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
-            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
-                class="fa-solid fa-mobile-screen-button text-[#E93B81]"></i></button>
+            
             <div class="flex flex-col items-baseline">
-              <span class="text-xs text-white">Phone</span>
-              <span><a href="tel:8279214452" class="text-white hover:text-[#FA5252]">0729496871</a></span>
+              <span class=" text-white text-sm leading-7 "><p>Available for hire:
+                </p></span>
+              
             </div>
           </div>
           <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
-            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
-                class="fa-solid fa-location-dot text-[#6AB5B8]"></i></button>
+            
             <div class="flex flex-col items-baseline">
-              <span class="text-xs text-white"><p>Available for hire:
+              <span class=" text-white text-sm leading-7 "><p>Available for hire:
                 
               </p></span>
               <span><a class="text-white">Norrkoping, Sweden</a></span>
@@ -285,7 +292,55 @@ const MyComponent = {
 
        
       </div>
+      
+
+      <div class=" border-b  border-t border-gray-700 py-2  ">
+        <div class="mt-4 mb-4  flex flex-row items-center">
+          <span class="text-white text-sm leading-7 mr-7">Available for hire :</span>
+              <input type="checkbox" class="peer sr-only opacity-0" id="toggle" />
+              <label for="toggle" class=" relative flex h-5 w-11 cursor-pointer items-center rounded-full bg-gray-400 px-0.5 outline-gray-400 transition-colors before:h-5 before:w-5 before:rounded-full before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:bg-green-500 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gray-400 peer-checked:peer-focus-visible:outline-green-500">
+                  <span class="sr-only">Enable</span>
+              </label>
+        </div>   
+      </div>
+
+      <div class=" border-b  border-gray-700  ">
+        <div class="mt-4 mb-4  flex flex-row items-center">
+          <span class="text-white text-sm font-bold  mr-7">Type of work:</span>    
+        </div>   
+        <div class="mt-4 mb-4  flex flex-col">
+          <span class="text-white text-sm leading-7 mr-7">Full-time</span>
+          <span class="text-white text-sm leading-7 mr-7">Part-Time</span>
+              
+        </div>  
+      </div>
+      <div class=" border-b  border-gray-700  ">
+        <div class="mt-4 mb-4  flex flex-row items-center">
+          <span class="text-white text-sm font-bold  mr-7">Languages spoken:</span>    
+        </div>   
+        <div class="mt-4 mb-4  flex flex-col">
+          <span class="text-white text-sm leading-7 mr-7">English : Fluent</span>
+          <span class="text-white text-sm leading-7 mr-7">Swedish : Elementary Proficiency</span>
+              
+        </div>  
+      </div>
+
+      <div class=" border-b  border-gray-700  ">
+        <div class="mt-4 mb-4  flex flex-row items-center">
+          <span class="text-white text-sm font-bold  mr-7">Website:</span>    
+        </div>   
+        <div class="mt-4 mb-4  flex flex-col">
+          <span class="text-white text-sm leading-7 mr-7">https://timothyjuma.com</span>
+          
+              
+        </div>  
+      </div>
+          
+          
     </div>
+
+    
+    
 
     <!-- Second Row (2x wider) -->
     <div class="bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 col-span-2">
