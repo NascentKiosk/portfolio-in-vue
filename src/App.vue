@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router';
 import Article from './components/article.vue';
 import Project from './components/projects.vue';
 import NavBar from './components/navbar.vue';
-
+import Footer from './components/footer.vue';
 const mobileMenuActive = ref(false);
 const route = useRoute();
 
@@ -329,17 +329,14 @@ const MyComponent = {
           <h5 class="text-xs  font-semibold ">Jomo Kenyatta University Of Agriculture And Technology</h5>
                 <p>Diploma in Infrmation Technology</p>
       </div>
-      
-      <br />
                 
-     
-     
-
     </div>
-      
-        
 
      </div>
+     <div id="app">
+        <Footer />
+        
+      </div>
 
        
            
@@ -412,19 +409,5 @@ body {
         @apply  px-1 py-0.5 bg-gray-100 rounded-md text-gray-700 text-xs border border-gray-300 ;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </style>
