@@ -322,11 +322,16 @@ const MyComponent = {
       <br />
       <div class="w-full border-t border-gray-300"></div>
       <br />
-      <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Education</h1> <br>
-      <img src="./img/logos/jkuat.png" alt="ReactJS Logo" class="h-[80px] w-[80px] rounded-50px">
-      <br />
-                <h5 class=" text-black text-xl lg:text-sm flex justify-center items-center ">Jomo Kenyatta University Of Agriculture And Technology</h5>
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Education</h1> <br>
+      <div class="grid place-items-center">
+          <img src="./img/logos/jkuat.png" alt="ReactJS Logo" class="h-[80px] w-[80px] rounded-50px">
+          <br />
+          <h5 class="text-xs  font-semibold ">Jomo Kenyatta University Of Agriculture And Technology</h5>
                 <p>Diploma in Infrmation Technology</p>
+      </div>
+      
+      <br />
+                
      
      
 
