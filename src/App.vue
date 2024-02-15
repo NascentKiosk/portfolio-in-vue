@@ -303,7 +303,7 @@ const MyComponent = {
          <!-- START Card component -->
         <div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
-                <img src="./img/logos/logo_c_sharp.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <img src="./img/logos/Logo_c_sharp.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>C#</h5>
                 <p>5 Year exp</p>
             </article>
