@@ -315,3 +315,61 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+<div data-toggle="modal" data-target="#projectDetailsModal" class="profile-project"><!--fragment#3367150f7#head--><img fragment="3367150f7" src="/storage/projects/img_60f54e3205fea.png" alt="Dental 99"> <div fragment="3367150f7" class="background-tint"></div> 
+<span fragment="3367150f7" class="button-group" style="display: none;"><a href="#">Edit</a> /
+              <a href="#" data-toggle="modal" data-target="#modalProjectDelete8">Remove</a></span> 
+              <h4 fragment="3367150f7"><span>Dental 99</span></h4> <p fragment="3367150f7" class="project-role">CTO</p> <p fragment="3367150f7" class="project-stack">Laravel, React, Native mobile, AWS</p> 
+              <div id="modalProjectDelete8" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true" class="modal fade" fragment="3367150f7"><div role="document" class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+              div class="modal-header"><h2 id="modalTitle" class="modal-title">Delete this project?</h2> <a data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></a>
+              </div> 
+              <div class="modal-footer"><button type="button" data-dismiss="modal" class="alt-button">Cancel</button> <button type="button" data-dismiss="modal">Yes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+<!--projects-->
+<div data-toggle="modal" data-target="#projectDetailsModal" class="profile-project">
+    <!--fragment#3367150f7#head-->
+    <img fragment="3367150f7" src="./img/react-cert-africa.png" alt="react-cert"> 
+    <div fragment="3367150f7" class="background-tint"></div> 
+    <span fragment="3367150f7" class="button-group" style="display: none;"><a href="#">Edit</a> /
+          <a href="#" data-toggle="modal" data-target="#modalProjectDelete8">Remove</a></span> 
+          <h4 fragment="3367150f7"><span>React Cert Africa</span></h4> 
+          <p fragment="3367150f7" class="project-role">Full stack Developer</p> 
+          <p fragment="3367150f7" class="project-stack">React,Bootstrap</p> 
+          <!--fragment#3367150f7#tail-->
+    </div>
+    <div data-toggle="modal" data-target="#projectDetailsModal" class="profile-project">
+    <!--fragment#3367150f7#head-->
+    <img fragment="3367150f7" src="./img/ruwaza.png" alt="Dental 99"> 
+    <div fragment="3367150f7" class="background-tint"></div> 
+    <span fragment="3367150f7" class="button-group" style="display: none;"><a href="#">Edit</a> /
+          <a href="#" data-toggle="modal" data-target="#modalProjectDelete8">Remove</a></span> 
+          <h4 fragment="3367150f7"><span>Ruwaza</span></h4> 
+          <p fragment="3367150f7" class="project-role">Full stack Developer</p> 
+          <p fragment="3367150f7" class="project-stack">React,PHP</p> 
+          <!--fragment#3367150f7#tail-->
+    </div>
+    <div data-toggle="modal" data-target="#projectDetailsModal" class="profile-project">
+    <!--fragment#3367150f7#head-->
+    <img fragment="3367150f7" src="./img/mazerabbit.png" alt="Dental 99"> 
+    <div fragment="3367150f7" class="background-tint"></div> 
+    <span fragment="3367150f7" class="button-group" style="display: none;"><a href="#">Edit</a> /
+          <a href="#" data-toggle="modal" data-target="#modalProjectDelete8">Remove</a></span> 
+          <h4 fragment="3367150f7"><span>Maze Game</span></h4> 
+          <p fragment="3367150f7" class="project-role">Full stack Developer</p> 
+          <p fragment="3367150f7" class="project-stack">React</p> 
+          <!--fragment#3367150f7#tail-->
+    </div>

@@ -3,17 +3,7 @@
 import { ref, onMounted, onBeforeUnmount, watch, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import Article from './components/article.vue';
-
-// Initialization for ES Users
-import {
-  Collapse,
-  initTE,
-} from "tw-elements";
-
-initTE({ Collapse });
-
-
-
+import Project from './components/projects.vue';
 
 const mobileMenuActive = ref(false);
 const route = useRoute();
@@ -131,14 +121,24 @@ const MyComponent = {
           Projects
         </button>
         <div class="flex items-center">
-        <button
-          type="button"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-          class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 motion-reduce:transition-none">
-          Work Expirience
-        </button>
-      </div>
+          <button
+            type="button"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 motion-reduce:transition-none">
+            Work Expirience
+          </button>
+        </div>
+
+        <div class="flex items-center">
+          <button
+            type="button"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            class="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium  leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 motion-reduce:transition-none">
+            Resume
+          </button>
+        </div>
        
        
        
@@ -309,7 +309,7 @@ const MyComponent = {
       <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Skills </h1>  <br />
       
 
-        <div class="text-sm text-slate-600 p-4 leading-6 flex flex-row flex-wrap gap-2">
+        <div class="text-sm text-slate-600 p-4 leading-6 flex flex-row flex-wrap gap-2 shadow-lg">
         <span class="pill">JavaScript Frameworks</span>
         <span class="pill">Front End Frameworks</span>
         <span class="pill">CSS Preprocessors</span>
@@ -330,51 +330,21 @@ const MyComponent = {
      
       <br />
       <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Recent projects</h1>  <br />
+      <div id="app">
+        <Project />
+      </div>
 
-        <div data-toggle="modal" data-target="#projectDetailsModal" class="profile-project">
-          <!--fragment#3367150f7#head-->
-          <img fragment="3367150f7" src="./img/react-cert-africa.png" alt="Dental 99"> 
-          <div fragment="3367150f7" class="background-tint"></div> 
-          <span fragment="3367150f7" class="button-group" style="display: none;"><a href="#">Edit</a> /
-                <a href="#" data-toggle="modal" data-target="#modalProjectDelete8">Remove</a></span> 
-                <h4 fragment="3367150f7"><span>React Cert Africa</span></h4> 
-                <p fragment="3367150f7" class="project-role">Full stack Developer</p> 
-                <p fragment="3367150f7" class="project-stack">React,Bootstrap</p> 
-                <!--fragment#3367150f7#tail-->
-          </div>
-          <div data-toggle="modal" data-target="#projectDetailsModal" class="profile-project">
-          <!--fragment#3367150f7#head-->
-          <img fragment="3367150f7" src="./img/ruwaza.png" alt="Dental 99"> 
-          <div fragment="3367150f7" class="background-tint"></div> 
-          <span fragment="3367150f7" class="button-group" style="display: none;"><a href="#">Edit</a> /
-                <a href="#" data-toggle="modal" data-target="#modalProjectDelete8">Remove</a></span> 
-                <h4 fragment="3367150f7"><span>Ruwaza</span></h4> 
-                <p fragment="3367150f7" class="project-role">Full stack Developer</p> 
-                <p fragment="3367150f7" class="project-stack">React,PHP</p> 
-                <!--fragment#3367150f7#tail-->
-          </div>
-          <div data-toggle="modal" data-target="#projectDetailsModal" class="profile-project">
-          <!--fragment#3367150f7#head-->
-          <img fragment="3367150f7" src="./img/mazerabbit.png" alt="Dental 99"> 
-          <div fragment="3367150f7" class="background-tint"></div> 
-          <span fragment="3367150f7" class="button-group" style="display: none;"><a href="#">Edit</a> /
-                <a href="#" data-toggle="modal" data-target="#modalProjectDelete8">Remove</a></span> 
-                <h4 fragment="3367150f7"><span>Maze Game</span></h4> 
-                <p fragment="3367150f7" class="project-role">Full stack Developer</p> 
-                <p fragment="3367150f7" class="project-stack">React</p> 
-                <!--fragment#3367150f7#tail-->
-          </div>
+    
 
           <br />
       <div class="w-full border-t border-gray-300"></div>
       <br />
-      <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Recent Roles</h1>  <br />
+      <h1 class="text-black text-2xl lg:text-4xl font-semi-bold leading-10">Recent Roles</h1>  
+      <br />
       
-      
-
-
       <div id="app">
         <Article />
+        
       </div>
 
 
