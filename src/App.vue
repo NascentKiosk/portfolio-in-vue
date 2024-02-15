@@ -244,61 +244,19 @@ const MyComponent = {
                 target="_blank" class="text-[#0072b1]"><i class="fa-brands fa-linkedin"></i></a></button>
           </div>
           <br />
-      <div class="w-full border-t border-gray-300"></div>
-      <br />
-          <!-- Availability -->
-       
-
+    
         </div>
-
         
-        <div class="contact_info  p-2 lg:p-7 rounded-2xl my-7">
-          <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
-            
-            <div class="flex flex-col items-baseline">
-              <span class=" text-white text-sm leading-7 "><p>Available for hire:
-                </p></span>
-              
-            </div>
-          </div>
-          <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
-            
-            <div class="flex flex-col items-baseline">
-              <span class=" text-white text-sm leading-7 "><p>Available for hire:
-                
-              </p></span>
-              <span><a class="text-white">Norrkoping, Sweden</a></span>
-            </div>
-          </div>
-          <div class="flex py-2.5 border-b border-[#3D3A3A] gap-2 lg:gap-3.5">
-            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
-                class="fa-solid fa-envelope text-[#FD7590]"></i></button>
-            <div class="flex flex-col items-baseline">
-              <span class="text-xs text-white">Email</span>
-              <span><a href="mailto:taknaresh515@gmail.com"
-                  class="text-white hover:text-[#FA5252]">mmbasujuma@gmail.com</a></span>
-            </div>
-          </div>
-          <div class="flex py-2.5 gap-2 lg:gap-3.5">
-            <button class="w-[2.5rem] h-[2.5rem] rounded-lg bg-[#000000]"><i
-                class="fa-solid fa-calendar-days text-[#C17CEB]"></i></button>
-            <div class="flex flex-col items-baseline">
-              <span class="text-xs text-white">Birthday</span>
-              <span><a class="text-white">October 18, 1989</a></span>
-            </div>
-          </div>
-        </div>
-      </div>
 
-       
       </div>
+    </div>
       
 
       <div class=" border-b  border-t border-gray-700 py-2  ">
         <div class="mt-4 mb-4  flex flex-row items-center">
           <span class="text-white text-sm leading-7 mr-7">Available for hire :</span>
               <input type="checkbox" class="peer sr-only opacity-0" id="toggle" />
-              <label for="toggle" class=" relative flex h-5 w-11 cursor-pointer items-center rounded-full bg-gray-400 px-0.5 outline-gray-400 transition-colors before:h-5 before:w-5 before:rounded-full before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:bg-green-500 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gray-400 peer-checked:peer-focus-visible:outline-green-500">
+              <label for="toggle" class=" relative flex h-5 w-11 cursor-pointer items-center rounded-full bg-red-400 px-0.5 outline-gray-400 transition-colors before:h-5 before:w-5 before:rounded-full before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:bg-green-500 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gray-400 peer-checked:peer-focus-visible:outline-green-500">
                   <span class="sr-only">Enable</span>
               </label>
         </div>   
