@@ -31,7 +31,7 @@
         <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">Full stack Developer <br /> React<br /> 
         </div>
         <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-            <a href="#" class="text-xs bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-1 px-2 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Visit Website</a>
+            <a href="https://nascentkiosk.github.io/maze/" target="blank" class="text-xs bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-1 px-2 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Visit Website</a>
         </div>
         
     </article>
