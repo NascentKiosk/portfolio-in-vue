@@ -6,6 +6,7 @@ import Article from './components/article.vue';
 import Project from './components/projects.vue';
 import NavBar from './components/navbar.vue';
 import Footer from './components/footer.vue';
+import RightRow from './components/rightrow.vue';
 const mobileMenuActive = ref(false);
 const route = useRoute();
 
@@ -77,9 +78,9 @@ const MyComponent = {
         class="px-6 sm:px-5 md:px-10 lg:px-14 pb-5  ">
         <div class="flex flex-col items-center">
           <img src="./assets/profile.png "
-            class="h-[80px] w-[80px]  rounded-[120px]  ">
-          <h2 class="mt-6 mb-2 text-2xl font-semi-bold text-white">Timothy Juma</h2>
-          <p class="text-white font-light uppercase">Norrköping, Sweden</p>
+            class="h-[65px] w-[80px]  rounded-[120px]  ">
+          <h2 class="mt-6 mb-2 text-2xl font-semi-bold text-white whitespace-nowrap">Timothy Juma</h2>
+          <p class="text-white font-light uppercase whitespace-nowrap">Norrköping, Sweden</p>
           <span class="text-[#ffff] text-sm font-semi-bold  px-5 py-1.5 rounded-lg whitespace-nowrap">Javascript Full Stack Developer</span>
 
           <!-- Social-Links -->
@@ -94,15 +95,13 @@ const MyComponent = {
           <br />
     
         </div>
-        
-
       </div>
     </div>
       
 
       <div class=" border-b  border-t border-gray-700 py-2  ">
         <div class="mt-4 mb-4  flex flex-row items-center">
-          <span class="text-white text-sm leading-7 mr-7">Available for hire :</span>
+          <span class="text-white text-sm leading-7 mr-7 whitespace-nowrap">Available for hire :</span>
               <input type="checkbox" class="peer sr-only opacity-0" id="toggle" checked/>
               <label for="toggle" class=" relative flex h-5 w-11 cursor-pointer items-center rounded-full bg-red-400 px-0.5 outline-gray-400 transition-colors before:h-5 before:w-5 before:rounded-full before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:bg-green-500 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gray-400 peer-checked:peer-focus-visible:outline-green-500">
                   <span class="sr-only">Enable</span>
@@ -136,7 +135,7 @@ const MyComponent = {
           <span class="text-white text-sm font-bold  mr-7">Website:</span>    
         </div>   
         <div class="mt-4 mb-4  flex flex-col">
-          <span class="text-white text-sm leading-7 mr-7">https://timothyjuma.com</span>
+          <span class="text-white text-sm leading-7 mr-7 whitespace-nowrap">https://timothy-juma.vercel.app</span>
           
               
         </div>  
@@ -208,26 +207,25 @@ const MyComponent = {
     </div>
 
     <!-- Third Row -->
+  
     <div class=" bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14">
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Tools / Frameworks</h1>
-      <div class="flex justify-between grid grid-cols-2 gap-2 m-5 mb-10">
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 mb-6">Tools / Frameworks</h1>
+      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
             <!-- START Card component -->
             <div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
-                <img src="./img/logos/react-js-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <img src="./img/logos/react-js-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px ">
                 <h5>React.js</h5>
-                <p>5 Year exp</p>
+                <p class="whitespace-nowrap">5 Year exp</p>
             </article>
 
             </div>
-          
-  
 
             <div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/nodejs.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>Node.js</h5>
-                <p>5 Year exp</p>
+                <p class="whitespace-nowrap">5 Year exp</p>
             </article>
 
             </div>
@@ -235,28 +233,28 @@ const MyComponent = {
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/vuejs-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>Vue.js</h5>
-                <p> 3 Year exp</p>
+                <p class="whitespace-nowrap"> 3 Year exp</p>
             </article>
 
             </div><div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/figma-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>Figma</h5>
-                <p>5 Year exp</p>
+                <p class="whitespace-nowrap">5 Year exp</p>
             </article>
 
             </div><div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/amazon_aws-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>AWS</h5>
-                <p> 3 Year exp</p>
+                <p class="whitespace-nowrap"> 3 Year exp</p>
             </article>
 
             </div><div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/getbootstrap-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>Bootstrap</h5>
-                <p>4 Year exp</p>
+                <p class="whitespace-nowrap">4 Year exp</p>
             </article>
             
             </div>
@@ -265,8 +263,8 @@ const MyComponent = {
              <div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/tailwindcss-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[30px] rounded-50px">
-                <h5>Tailwind CSS</h5>
-                <p>5 Year exp</p>
+                <h5 class="whitespace-nowrap">Tailwind CSS</h5>
+                <p class="whitespace-nowrap">5 Year exp</p>
             </article>
           </div>
           <!-- START Card component -->
@@ -274,7 +272,7 @@ const MyComponent = {
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/nextjs01.png" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>Next.js</h5>
-                <p>5 Year exp</p>
+                <p class="whitespace-nowrap">5 Year exp</p>
             </article>
           </div>
         </div>
@@ -283,13 +281,13 @@ const MyComponent = {
       <br />
 
       <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Languages</h1>
-      <div class="flex justify-between grid grid-cols-2 gap-2 m-5 mb-10">
+      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
         <!-- START Card component -->
         <div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/javascript-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>JavaScript</h5>
-                <p>5 Year exp</p>
+                <p class="whitespace-nowrap">5 Year exp</p>
             </article>
           </div>
           <!-- START Card component -->
@@ -297,15 +295,15 @@ const MyComponent = {
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/typescriptlang-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[30px] rounded-50px">
                 <h5>TypeScript</h5>
-                <p>5 Year exp</p>
+                <p class="whitespace-nowrap">5 Year exp</p>
             </article>
         </div>
          <!-- START Card component -->
         <div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
-                <img src="./img/logos/Logo_c_sharp.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <img src="./img/logos/Logo_C_sharp.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>C#</h5>
-                <p>5 Year exp</p>
+                <p class="whitespace-nowrap">5 Year exp</p>
             </article>
         </div>
          <!-- START Card component -->
@@ -313,7 +311,7 @@ const MyComponent = {
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/python-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>Python</h5>
-                <p>5 Year exp</p>
+                <p class="whitespace-nowrap">5 Year exp</p>
             </article>
         </div>
 
@@ -331,7 +329,7 @@ const MyComponent = {
       </div>
                 
     </div>
-
+    
      </div>
      <div id="app">
         <Footer />

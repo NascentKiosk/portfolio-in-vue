@@ -13,7 +13,7 @@
           <p class="text-gray-600 text-sm leading-7 pt-6 pb-12">I'm a Full Stack Application Developer with extensive experience in JavaScript/TypeScript application development. Over the years, I've had the opportunity to work with professional teams globally and have developed large-scale applications such as Management Systems, Point of Sales, E-commerce applications, and more. My passion lies in crafting efficient, reliable, and user-friendly applications that cater to the needs of businesses and end-users alike. I'm always on the lookout for new and exciting projects to work on, so feel free to connect with me to discuss any potential opportunities.</p>
         </div>
         <div class="flex-1 bg-white border-b border-gray-200 flex flex-col items-center">
-          <img src="./assets/profile.png"
+          <img src="../assets/profile.png"
             class="h-[140px] w-[140px]  rounded-[120px] top-0 object-cover ">
         </div>
       
