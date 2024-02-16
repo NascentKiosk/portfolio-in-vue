@@ -1,12 +1,12 @@
 <script setup>
-//src="https://cdn.tailwindcss.com";
+
 import { ref, onMounted, onBeforeUnmount, watch, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import Article from './components/article.vue';
 import Project from './components/projects.vue';
 import NavBar from './components/navbar.vue';
 import Footer from './components/footer.vue';
-import RightRow from './components/rightrow.vue';
+
 const mobileMenuActive = ref(false);
 const route = useRoute();
 
@@ -66,7 +66,7 @@ const MyComponent = {
   </div>
 
 <!-- shows only small screen -->
-  <div class="block md:hidden">
+  <div class="block md:hidden overflow-y: hidden;">
   
 
     <!-- First Row -->
