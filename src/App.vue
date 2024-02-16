@@ -70,7 +70,7 @@ const MyComponent = {
   
 
     <!-- First Row -->
-    <div class="border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 ">
+    <div class="border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 bg-blue-900 ">
       <div class="w-full">
         <div :class="[mobileClass]" v-if="showTopContainer"
         class="px-6 sm:px-5 md:px-10 lg:px-14 pb-5  ">
@@ -303,7 +303,7 @@ const MyComponent = {
   
 
   <!-- First Row -->
-  <div class="border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 ">
+  <div class="border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 bg-blue-900">
     <div class="w-full">
       <div :class="[mobileClass]" v-if="showTopContainer"
       class="px-6 sm:px-5 md:px-10 lg:px-14 pb-5  ">
@@ -571,11 +571,7 @@ const MyComponent = {
 </template>
 
 <style>
-body {
-  background-image: url(./assets/bgtwo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 .socail_icon button:hover,
 .contact_info button:hover .main_container .tabs button:hover {
@@ -626,6 +622,12 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+  /* Adjust the class or selector according to your specific structure */
+  .content-after-footer {
+    display: none;
+  }
+}
 
 
 @tailwind base;
