@@ -66,7 +66,7 @@ const MyComponent = {
   </div>
 
 <!-- shows only small screen -->
-  <div class="grid grid-cols-4 block md:hidden">
+  <div class="block md:hidden">
   
 
     <!-- First Row -->
@@ -90,15 +90,13 @@ const MyComponent = {
                 href="https://www.linkedin.com/in/timothy-juma-44902b48/"
                 target="_blank" class="text-[#0072b1]"><i class="fa-brands fa-linkedin"></i></a></button>
           </div>
-          <br />
     
         </div>
       </div>
     </div>
-      
-
+    
       <div class=" border-b  border-t border-gray-700 py-2  ">
-        <div class="mt-4 mb-4  flex flex-row items-center">
+        <div class="mt-4 mb-4 flex justify-center items-center">
           <span class="text-white text-sm leading-7 mr-7 whitespace-nowrap">Available for hire :</span>
               <input type="checkbox" class="peer sr-only opacity-0" id="toggle" checked/>
               <label for="toggle" class=" relative flex h-5 w-11 cursor-pointer items-center rounded-full bg-red-400 px-0.5 outline-gray-400 transition-colors before:h-5 before:w-5 before:rounded-full before:bg-white before:shadow before:transition-transform before:duration-300 peer-checked:bg-green-500 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gray-400 peer-checked:peer-focus-visible:outline-green-500">
@@ -106,44 +104,9 @@ const MyComponent = {
               </label>
         </div>   
       </div>
-
-      <div class=" border-b  border-gray-700  ">
-        <div class="mt-4 mb-4  flex flex-row items-center">
-          <span class="text-white text-sm font-bold  mr-7">Type of work:</span>    
-        </div>   
-        <div class="mt-4 mb-4  flex flex-col">
-          <span class="text-white text-sm leading-7 mr-7">Full-time</span>
-          <span class="text-white text-sm leading-7 mr-7">Part-Time</span>
-              
-        </div>  
-      </div>
-      <div class=" border-b  border-gray-700  ">
-        <div class="mt-4 mb-4  flex flex-row items-center">
-          <span class="text-white text-sm font-bold  mr-7">Languages spoken:</span>    
-        </div>   
-        <div class="mt-4 mb-4  flex flex-col">
-          <span class="text-white text-sm leading-7 mr-7">English : Fluent</span>
-          <span class="text-white text-sm leading-7 mr-7">Swedish : Elementary Proficiency</span>
-              
-        </div>  
-      </div>
-
-      <div class=" border-b  border-gray-700  ">
-        <div class="mt-4 mb-4  flex flex-row items-center">
-          <span class="text-white text-sm font-bold  mr-7">Website:</span>    
-        </div>   
-        <div class="mt-4 mb-4  flex flex-col">
-          <span class="text-white text-sm leading-7 mr-7 whitespace-nowrap">https://timothy-juma.vercel.app</span>
-          
-              
-        </div>  
-      </div>
           
           
     </div>
-
-    
-    
 
     <!-- Second Row (2x wider) -->
     <div class="bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 col-span-2">
@@ -208,7 +171,7 @@ const MyComponent = {
   
     <div class=" bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14">
       <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 mb-6">Tools / Frameworks</h1>
-      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
+      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 sm:gap-x-4 sm:grid-cols-2 gap-2 m-5 mb-10">
             <!-- START Card component -->
             <div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
@@ -328,7 +291,14 @@ const MyComponent = {
                 
     </div>
     
+    <div id="app">
+        <Footer />
+            
+      </div>
+    
   </div>
+
+
 
   <!-- shows only large screens  -> lg -> xl -> 2xl screen -->
   <div class="grid grid-cols-4  invisible md:visible ">
