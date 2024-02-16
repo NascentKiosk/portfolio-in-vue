@@ -111,7 +111,7 @@ const MyComponent = {
     <!-- Second Row (2x wider) -->
     <div class="bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14 col-span-2">
         <div class=" w-full ">
-          <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Introduction</h1>
+          <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Introduction</h1>
         <p class="text-gray-600 text-sm leading-7 pt-6 pb-12 ">I'm a Full Stack Application Developer with extensive experience in JavaScript/TypeScript application development. Over the years, I've had the opportunity to work with professional teams globally and have developed large-scale applications such as Management Systems, Point of Sales, E-commerce applications, and more. My passion lies in crafting efficient, reliable, and user-friendly applications that cater to the needs of businesses and end-users alike. I'm always on the lookout for new and exciting projects to work on, so feel free to connect with me to discuss any potential opportunities.
           
         </p>
@@ -124,7 +124,7 @@ const MyComponent = {
       <br />
       <!-- Skills -->
 
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Skills </h1>  <br />
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Skills </h1>  <br />
       
 
         <div class="text-sm text-slate-600 p-4 leading-6 flex flex-row flex-wrap gap-2 shadow-lg">
@@ -147,7 +147,7 @@ const MyComponent = {
       <div class="w-full border-t border-gray-300"></div>
      
       <br />
-      <h1  id ="projects" class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Recent projects</h1>  <br />
+      <h1  id ="projects" class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Recent projects</h1>  <br />
       <div id="app">
         <Project />
       </div>
@@ -157,7 +157,7 @@ const MyComponent = {
           <br />
       <div class="w-full border-t border-gray-300"></div>
       <br />
-      <h1 id="experience" class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Recent Roles</h1>  
+      <h1 id="experience" class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Recent Roles</h1>  
       <br />
       
       <div id="app">
@@ -170,8 +170,8 @@ const MyComponent = {
     <!-- Third Row -->
   
     <div class=" bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14">
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 mb-6">Tools / Frameworks</h1>
-      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 sm:gap-x-4 sm:grid-cols-2 gap-2 m-5 mb-10">
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 mb-6 text-center">Tools / Frameworks</h1>
+      <div class="flex overflow-x-auto sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10 ">
             <!-- START Card component -->
             <div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
@@ -241,8 +241,8 @@ const MyComponent = {
       <div class="w-full border-t border-gray-300"></div>
       <br />
 
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Languages</h1>
-      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Languages</h1>
+      <div class="flex overflow-x-auto sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
         <!-- START Card component -->
         <div  class="flex justify-center items-center ">
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
@@ -256,7 +256,7 @@ const MyComponent = {
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/typescriptlang-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[30px] rounded-50px">
                 <h5>TypeScript</h5>
-                <p class="whitespace-nowrap">5 Year exp</p>
+                <p class="whitespace-nowrap">4 Year exp</p>
             </article>
         </div>
          <!-- START Card component -->
@@ -264,7 +264,7 @@ const MyComponent = {
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/Logo_C_sharp.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>C#</h5>
-                <p class="whitespace-nowrap">5 Year exp</p>
+                <p class="whitespace-nowrap">3 Year exp</p>
             </article>
         </div>
          <!-- START Card component -->
@@ -272,7 +272,7 @@ const MyComponent = {
               <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
                 <img src="./img/logos/python-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
                 <h5>Python</h5>
-                <p class="whitespace-nowrap">5 Year exp</p>
+                <p class="whitespace-nowrap">3 Year exp</p>
             </article>
         </div>
 
@@ -281,7 +281,7 @@ const MyComponent = {
       <br />
       <div class="w-full border-t border-gray-300"></div>
       <br />
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Education</h1> <br>
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Education</h1> <br>
       <div class="grid place-items-center">
           <img src="./img/logos/jkuat.png" alt="ReactJS Logo" class="h-[80px] w-[80px] rounded-50px">
           <br />
@@ -297,8 +297,6 @@ const MyComponent = {
       </div>
     
   </div>
-
-
 
   <!-- shows only large screens  -> lg -> xl -> 2xl screen -->
   <div class="grid grid-cols-4  invisible md:visible ">
@@ -528,7 +526,7 @@ const MyComponent = {
             <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
               <img src="./img/logos/typescriptlang-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[30px] rounded-50px">
               <h5>TypeScript</h5>
-              <p class="whitespace-nowrap">5 Year exp</p>
+              <p class="whitespace-nowrap">4 Year exp</p>
           </article>
       </div>
        <!-- START Card component -->
@@ -536,7 +534,7 @@ const MyComponent = {
             <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
               <img src="./img/logos/Logo_C_sharp.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
               <h5>C#</h5>
-              <p class="whitespace-nowrap">5 Year exp</p>
+              <p class="whitespace-nowrap">3 Year exp</p>
           </article>
       </div>
        <!-- START Card component -->
@@ -544,7 +542,7 @@ const MyComponent = {
             <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
               <img src="./img/logos/python-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
               <h5>Python</h5>
-              <p class="whitespace-nowrap">5 Year exp</p>
+              <p class="whitespace-nowrap">3 Year exp</p>
           </article>
       </div>
 
@@ -564,13 +562,12 @@ const MyComponent = {
   </div>
   
   </div>
-
-      <div id="app">
+  <div class="invisible md:visible" id="app">
         <Footer />
             
       </div>
- 
-           
+
+          
 </template>
 
 <style>
