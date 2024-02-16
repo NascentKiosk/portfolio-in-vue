@@ -6,7 +6,7 @@
         <p  class="project-stack text-center text-xs">Sep 2023 to present</p>
         <br />
         <p class="leading-relaxed text-sm ">
-          Develop responsive web applications using React.js, leveraging state management with Redux and context API...  
+          Develop responsive web applications using React.js, leveraging state management with Redux and context API 
           <span :class="{ 'hidden': !showMore1 }" id="more-text1">
             Implement RESTful APIs for seamless integration of frontend and backend systems. Collaborate with designers and backend developers to ensure optimal user experience and functionality. Collaborate with development teams to integrate automated testing into CI/CD pipelines, ensuring code quality and minimizing bugs in production.
           </span>
@@ -23,7 +23,7 @@
         <p  class="project-stack text-center text-xs">2020-2022</p>
         <br />
         <p class="leading-relaxed text-sm ">
-            Designed, developed, and deployed a CRM Application using modern frontend technologies such as React.js,... 
+            Designed, developed, and deployed a CRM Application using modern frontend technologies such as React.js, 
           <span :class="{ 'hidden': !showMore2 }" id="more-text2">
             Redux, Node.js and RESTful APIs. Implemented features such as user authentication, client management, and task tracking to streamline business processes. Utilized RESTful APIs to communicate with backend services and databases, ensuring data integrity and security. Collaborated with designers to translate wireframes into responsive web interfaces.
           </span>
@@ -41,7 +41,7 @@
         <p  class="project-stack text-center text-xs">2018-2022</p>
         <br />
         <p class="leading-relaxed text-sm ">
-            Deployed interfaces for client projects using HTML, CSS, and JavaScript. Worked closely with lead developer....  
+            Deployed interfaces for client projects using HTML, CSS, and JavaScript. Worked closely with lead developer  
           <span :class="{ 'hidden': !showMore3 }" id="more-text2">
             to design products and solutions to different user and infrastructure problems. Conducted code reviews and implemented best practices to improve code quality. Configuring and deploying new releases of Applications. 
           </span>
