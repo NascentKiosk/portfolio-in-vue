@@ -258,6 +258,112 @@ import Project from '../components/projects.vue';
         
       </div>
       <br />
+
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Containerization</h1>
+      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
+        <!-- START Card component -->
+        <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/docker-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <h5>Docker</h5>
+                <p class="whitespace-nowrap">3 Year exp</p>
+            </article>
+          </div>
+          <!-- START Card component -->
+        <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/kubernetes-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[30px] rounded-50px">
+                <h5>Kubernetes</h5>
+                <p class="whitespace-nowrap"> 2 Year exp</p>
+            </article>
+        </div> 
+      </div>
+      <br />
+
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">CI/CD & Testing Tools</h1>
+      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
+        <!-- START Card component -->
+        <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/github-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <h5>Github CI</h5>
+                <p class="whitespace-nowrap">3 Year exp</p>
+            </article>
+          </div>
+        <!-- START Card component -->
+        <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/gitlab-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <h5>Gitlab CI</h5>
+                <p class="whitespace-nowrap">2 Year exp</p>
+            </article>
+          </div>
+          <!-- START Card component -->
+        <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/cypressio-original-wordmark.svg" alt="ReactJS Logo" class="h-[30px] w-[30px] rounded-50px">
+                <h5>Cypress</h5>
+                <p class="whitespace-nowrap"> 2 Year exp</p>
+            </article>
+        </div> 
+      </div>
+      <br />
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Scripting</h1>
+      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
+        <!-- START Card component -->
+        <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/gnu_bash-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <h5>Bash</h5>
+                <p class="whitespace-nowrap">3 Year exp</p>
+            </article>
+          </div>
+          <!-- START Card component -->
+        <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/file_type_powershell2.svg" alt="ReactJS Logo" class="h-[30px] w-[30px] rounded-50px">
+                <h5>PowerShell</h5>
+                <p class="whitespace-nowrap">3 Year exp</p>
+            </article>
+        </div> 
+      </div>
+      <br />
+
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Data Storage</h1>
+      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
+        <!-- START Card component -->
+        <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/mongodb-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <h5>MongoDB</h5>
+                <p class="whitespace-nowrap">3 Year exp</p>
+            </article>
+          </div>
+         
+      </div>
+      <br />
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Operating Systems</h1>
+      <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
+        <!-- START Card component -->
+        <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/windows-icon.png" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <h5>Windows</h5>
+                <p class="whitespace-nowrap">5 Year exp</p>
+            </article>
+          </div>
+          <div  class="flex justify-center items-center ">
+              <article class="flex flex-col items-center bg-white shadow-2xl rounded-2xl p-5">
+                <img src="../img/logos/linux-icon.svg" alt="ReactJS Logo" class="h-[30px] w-[50px] rounded-50px">
+                <h5>Linux</h5>
+                <p class="whitespace-nowrap">2 Year exp</p>
+            </article>
+          </div>
+         
+      </div>
+      <br />
+
+
       <div class="w-full border-t border-gray-300"></div>
       <br />
       <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Education</h1> <br>
