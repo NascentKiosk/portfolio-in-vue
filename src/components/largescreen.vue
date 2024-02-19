@@ -149,7 +149,7 @@ import Project from '../components/projects.vue';
     </div>
     <!-- Third Row -->
     <div class=" bg-white border border-gray-200 p-6 sm:p-5 md:p-10 lg:p-14">
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 mb-6">Tools / Frameworks</h1>
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 mb-6 text-center">Tools / Frameworks</h1>
       <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
             <!-- START Card component -->
             <div  class="flex justify-center items-center ">
@@ -220,7 +220,7 @@ import Project from '../components/projects.vue';
       <div class="w-full border-t border-gray-300"></div>
       <br />
 
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Languages</h1>
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Languages</h1>
       <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
         <!-- START Card component -->
         <div  class="flex justify-center items-center ">
@@ -258,8 +258,10 @@ import Project from '../components/projects.vue';
         
       </div>
       <br />
+      <div class="w-full border-t border-gray-300"></div>
+      <br />
 
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Containerization</h1>
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Containerization</h1>
       <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
         <!-- START Card component -->
         <div  class="flex justify-center items-center ">
@@ -279,8 +281,10 @@ import Project from '../components/projects.vue';
         </div> 
       </div>
       <br />
+      <div class="w-full border-t border-gray-300"></div>
+      <br />
 
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">CI/CD & Testing Tools</h1>
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">CI/CD & Testing Tools</h1>
       <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
         <!-- START Card component -->
         <div  class="flex justify-center items-center ">
@@ -308,7 +312,9 @@ import Project from '../components/projects.vue';
         </div> 
       </div>
       <br />
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Scripting</h1>
+      <div class="w-full border-t border-gray-300"></div>
+      <br />
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Scripting</h1>
       <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
         <!-- START Card component -->
         <div  class="flex justify-center items-center ">
@@ -328,8 +334,10 @@ import Project from '../components/projects.vue';
         </div> 
       </div>
       <br />
+      <div class="w-full border-t border-gray-300"></div>
+      <br />
 
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Data Storage</h1>
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Data Storage</h1>
       <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
         <!-- START Card component -->
         <div  class="flex justify-center items-center ">
@@ -342,7 +350,9 @@ import Project from '../components/projects.vue';
          
       </div>
       <br />
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Operating Systems</h1>
+      <div class="w-full border-t border-gray-300"></div>
+      <br />
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Operating Systems</h1>
       <div class="grid grid-cols-3 sm:flex sm:overflow-x-auto sm:gap-x-2 md:gap-x-4 lg:grid-cols-2 gap-2 m-5 mb-10">
         <!-- START Card component -->
         <div  class="flex justify-center items-center ">
@@ -366,7 +376,7 @@ import Project from '../components/projects.vue';
 
       <div class="w-full border-t border-gray-300"></div>
       <br />
-      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10">Education</h1> <br>
+      <h1 class="text-black text-2xl lg:text-3xl font-semi-bold leading-10 text-center">Education</h1> <br>
       <div class="grid place-items-center">
           <img src="../img/logos/jkuat.png" alt="ReactJS Logo" class="h-[80px] w-[80px] rounded-50px">
           <br />
