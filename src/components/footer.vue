@@ -6,7 +6,7 @@
             © 2024 Copyright :
             <a
             class="text-neutral-800 dark:text-neutral-400"
-            href="https://tw-elements.com/"
+            href="https://timothy-juma.vercel.app"
             >Timothy Juma</a
             >
         </div>
